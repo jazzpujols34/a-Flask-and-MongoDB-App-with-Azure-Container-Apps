@@ -61,4 +61,9 @@ def update_book(book_id: str):
     
     return f"UPDATE: Your book has been updated to: {new_book} ({new_pages} pages).\n"
 
-
+# DELETE
+@app.route("/book/<string:book_id>", methods = ['DELETE'])
+def remove_book(book_id: str):
+    collection.delete_one({"_id": bson.ObjectId(book_id)})
+    
+    return f"DELETE: Your book (id = {book_id}) has been remove from your bookshelf.\n"
