@@ -6,14 +6,6 @@ This project is a simple Flask application that connects to a MongoDB Atlas data
 
 The project has the following structure:
 
-.
-├── templates
-│   └── index.html
-├── .gitignore
-├── app.py
-└── requirements.txt
-
-
 - `app.py`: This is the main Python script of the application. It sets up the Flask application and handles the routing for the application.
 - `templates/index.html`: This is the HTML template for the application's homepage.
 - `requirements.txt`: This file lists the Python dependencies that need to be installed for the application to run.
